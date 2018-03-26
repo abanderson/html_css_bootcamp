@@ -7,16 +7,16 @@ body {
 .container {
     width: 960px;
     margin: 0 auto;
-    display: table;
 }
 
 
 /*** Sidebar Styles ***/
 
 .sidebar {
-    width: 20%;
-    /*float: left;*/ 
-    display: table-cell;
+    width: 200px;
+    height: 100vh;
+    float: left;
+    position: fixed; 
     background-color: #555555;
     box-shadow: 3px 3px 10px #AAAAAA;
 }
@@ -31,6 +31,7 @@ body {
     border: 1px solid #979797;
     border-radius: 3px;
     padding: 3px 0px 3px 6px;
+    width: 160px;
 }
 
 .sidebar-header, .sidebar-menu {
@@ -40,15 +41,6 @@ body {
 .sidebar-header {
     margin-top: 30px;
     margin-bottom: 50px;
-}
-
-.sidebar-menu {
-    /* This positions the footer
-        at the bottom of the sidebar
-        for this layout only and is
-        not a good solution. Will change
-        in Flexbox implementation. */
-    padding-bottom: 265%; 
 }
 
 .sidebar-menu a {
@@ -67,20 +59,21 @@ body {
     text-align: center;
     font-size: 12px;
     color: #979797;
-    margin-bottom: 10px;
+    position: fixed;
+    bottom: 2vh;
+    width: 200px;
 }
 
 
 /*** Main Content Styles ***/
 
 .main-content {
-    width: 77%;
-    /*float: left; */
-    padding-left: 25px;
-    display: table-cell;
+    width: 730px;
+    float: right;
 }
 
 .main-content-header {
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 
