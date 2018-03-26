@@ -1,3 +1,5 @@
+/*** Global Styles ***/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,9 +10,12 @@ body {
     display: table;
 }
 
+
+/*** Sidebar Styles ***/
+
 .sidebar {
     width: 20%;
-    /* float: left; */
+    /*float: left;*/ 
     display: table-cell;
     background-color: #555555;
     box-shadow: 3px 3px 10px #AAAAAA;
@@ -23,7 +28,6 @@ body {
 
 .sidebar input {
     background-color: #555555;
-    /*border-color: #979797;*/
     border: 1px solid #979797;
     border-radius: 3px;
     padding: 3px 0px 3px 6px;
@@ -36,6 +40,15 @@ body {
 .sidebar-header {
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+.sidebar-menu {
+    /* This positions the footer
+        at the bottom of the sidebar
+        for this layout only and is
+        not a good solution. Will change
+        in Flexbox implementation. */
+    padding-bottom: 265%; 
 }
 
 .sidebar-menu a {
@@ -57,9 +70,12 @@ body {
     margin-bottom: 10px;
 }
 
+
+/*** Main Content Styles ***/
+
 .main-content {
     width: 77%;
-    /*float: left;*/
+    /*float: left; */
     padding-left: 25px;
     display: table-cell;
 }
@@ -105,7 +121,7 @@ body {
     color: #838383;
 }
 
-q {
+.main-content-quote q {
     quotes: "“" "”";
 }
 
