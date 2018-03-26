@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    display: table;
+}
+
+.sidebar {
+    width: 20%;
+    /* float: left; */
+    display: table-cell;
+    background-color: #555555;
+    box-shadow: 3px 3px 10px #AAAAAA;
+}
+
+.sidebar h1 {
+    color: #CBCBCB;
+    font-size: 16px;
+}
+
+.sidebar input {
+    background-color: #555555;
+    /*border-color: #979797;*/
+    border: 1px solid #979797;
+    border-radius: 3px;
+    padding: 3px 0px 3px 6px;
+}
+
+.sidebar-header, .sidebar-menu {
+    margin-left: 20px;
+}
+
+.sidebar-header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.sidebar-menu a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #979797;
+}
+
+.sidebar-menu a:hover {
+    color: #CBCBCB;
+}
+
+.sidebar-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #979797;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    width: 77%;
+    /*float: left;*/
+    padding-left: 25px;
+    display: table-cell;
+}
+
+.main-content-header {
+    margin-bottom: 50px;
+}
+
+.main-content-header p {
+    color: #BBBBBB;
+    margin-bottom: 5px;
+}
+
+.main-logo-text {
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+.main-content-text-block {
+    margin-bottom: 40px;
+}
+
+.main-content-text-block h1 {
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.main-content-text-block p {
+    color: #666666;
+}
+
+.main-content-quote {
+    background-color: #E6E3DE;
+    border-left: 5px solid #C3C3C4;
+    padding: 10px 50px 10px 20px;
+    margin-bottom: 40px;
+}
+
+.main-content-quote q, .main-content-quote p {
+    font-size: 16px;
+    font-style: italic;
+    color: #838383;
+}
+
+q {
+    quotes: "“" "”";
+}
+
+.main-content-quote q:first-child::before {
+    content: open-quote;
+    font-size: 48px;
+}
+
+.main-content-quote q:first-child::after {
+    content: open-quote;
+    font-size: 48px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -5px;
+}
+
+.main-content-quote q:last-child {
+    text-align: right;
+}
+
+.main-content-quote p {
+    text-align: right;
+    margin-bottom: 0px;
+    margin-right: 30px; 
+}
