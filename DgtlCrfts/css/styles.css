@@ -14,10 +14,31 @@ header {
     text-align: right;
     padding-top: 10px;
     margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.header-nav a, .header-logo-block h1, .header-logo-block p {
+    color: #F4F4F4;
 }
 
 .header-nav a {
-    color: #FFFFFF;
+    /* color: #F4F4F4; */
     text-decoration: none;
     margin-left: 10px;
+}
+
+.header-logo-block {
+    text-align: center;
+}
+
+.header-logo-block h1 {
+    font-size: 56px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* color: #F4F4F4; */
+}
+
+.header-logo-block p {
+    font-size: 20px;
 }
